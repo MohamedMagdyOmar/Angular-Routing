@@ -19,7 +19,7 @@
 
     <div class="row mb-2">
       <div class="col-md-4">
-        <button class="btn btn-primary mr-3" style="width:80px" type="button" title="Save your entered data" (click)="saveProduct()">
+        <button class="btn btn-primary mr-3" style="width:80px" type="button" title="Save your entered data" [disabled]="!isValid()" (click)="saveProduct()">
           Save
         </button>
 
